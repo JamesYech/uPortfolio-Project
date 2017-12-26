@@ -1,0 +1,172 @@
+/*----- global/default settings -------------------------*/
+    * {                               /*white space reset*/
+        margin: 0;
+        padding: 0;
+    }
+
+
+    html {     /*sets screen and css pixels roughly equal*/
+        font-size: 10px;
+    }
+
+
+    article,             /*I don't agree with this format*/
+    body,
+    div,
+    footer,
+    header,
+    main,
+    nav,
+    section {
+        box-sizing: border-box;
+    }
+
+
+    /*----- color reference -------------------------------
+
+        # Dark grey (text): #333
+        # mid grey 1 (text): #424242
+        # Dark Blue (links): #000066
+        # Mid Blue (): #339
+        # Light blue (): #CCCCFF
+        # light grey(): #666
+        # off white (background): #fdfdfd
+    */
+
+
+/*----- common ------------------------------------------*/
+
+    body {
+        background: #fdfdfd;
+        color: #424242;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 100.01%;
+        max-width: 960px;
+        padding: 1em;
+    }
+
+    .hr-line {
+        background: #666;
+        height: 2px;
+        margin: 5px 0 5px;
+        width: 100%;
+    }
+
+
+/*----- header ------------------------------------------*/
+
+    .header-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .logo-box {
+        width: 33%;
+    }
+
+    .logo {
+        margin-bottom: auto;
+        max-width: 100%;
+    }
+
+    .my-name {
+        font-size: 5vmax;
+        font-weight: 100 ;
+        letter-spacing: 2px;
+    }
+
+    .my-title {
+        font-size: 1.5em;
+        font-weight: 100;
+    }
+
+    .name-box {
+        margin-bottom: auto;
+        margin-left: auto;
+        text-align: right;
+        width: 67%;
+    }
+
+
+/*----- main -------------------------------------------*/
+
+    .main-pic {
+        max-width: 100%;
+    }
+
+    .content {
+        font-size: 1.5em;
+    }
+
+
+/*----- navigation --------------------------------------*/
+
+    .nav-title {
+        color: #666;
+        font-size: 3em;
+        margin: 0 0 5px;
+    }
+
+    .nav-box {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 2em;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .nav-tile {
+        min-width: 300px;
+        padding: 5px;
+        width: 33%;
+    }
+
+    .nav-tile a:link,
+    .nav-tile a:visited {
+        color: #424242;
+        text-decoration: none;
+    }
+
+    .nav-tile a:hover {
+        color: #339;
+    }
+
+    .nav-pic {
+        justify-content: center;
+        margin-left: auto;
+        width: 100%;
+    }
+
+
+/*----- footer ------------------------------------------*/
+
+    .footer-text {
+        font-size: 1em;
+        text-align: center;
+    }
+
+
+/*----- media breaks ------------------------------------*/
+
+    @media screen and (max-width: 480px) {
+        .my-name {
+            font-size: 4vmax;
+        }
+        .my-title {
+            font-size: 1.25em;
+        }
+    }
+
+    @media screen and (max-width: 635px) {
+        .nav-tile {
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width: 636px) and (max-width: 934px) {
+        .nav-tile {
+            width: 50%;
+        }
+    }
