@@ -177,30 +177,31 @@
         min-height: 30vh;
         position: relative;
         width: 100%;
+        /*background-repeat: no-repeat;*/
     }
 
     .nav-jdtech {
-        background: url(../img/jdtech_lg.jpg) ;
+        background-image: url(../img/jdtech_sm.jpg) ;
     }
 
     .nav-tech-proj {
-        background: url(../img/tech_projects_sm.jpg) ;
+        background-image: url(../img/tech_projects_sm.jpg) ;
     }
 
     .nav-webdev {
-        background: url(../img/web_dev_sm.jpg) ;
+        background-image: url(../img/web_dev_sm.jpg) ;
     }
 
     .nav-community {
-        background: url(../img/comm_srvc_sm.jpg) ;
+        background-image: url(../img/comm_srvc_sm.jpg) ;
     }
 
     .nav-office {
-        background: url(../img/office_sm.jpg) ;
+        background-image: url(../img/office_sm.jpg) ;
     }
 
     .nav-portfolio {
-        background: url(../img/logo_sm.png) ;
+        background-image: url(../img/logo_sm.png) ;
     }
 
     .nav-article {
