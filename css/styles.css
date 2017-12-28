@@ -134,7 +134,7 @@
       width: 100%;
     }
 
-    .main-article h1 {
+    .main-article h2 {
         font-size: 2em;
     }
 
@@ -203,7 +203,7 @@
         background-image: url(../img/logo_sm.png) ;
     }
 
-    .nav-article {
+    .nav-overlay {
         background-color: rgba(0, 0, 0, 0.7);
         bottom: 0;
         box-sizing: border-box;
@@ -257,6 +257,3 @@
             grid-column: span 4;
         }
     }
-
-
-
