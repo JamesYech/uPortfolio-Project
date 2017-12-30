@@ -148,7 +148,7 @@
         font-size: 1.5em;
     }
 
-    .main-overlay a {
+    .main-overlay a {             /*Used on a sub-page*/
         text-decoration: none;
         color: #CCF;
     }
