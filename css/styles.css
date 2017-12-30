@@ -112,37 +112,43 @@
         grid-row: 2/6;
     }
 
-    .main-img {
-        padding-top: 10px;
-        width: 100%;
-    }
-
     .main-section {
         grid-column: span 12;
         grid-row: 2/4;
     }
 
-    .main-article {
-      background-color: rgba(0, 0, 0, 0.7);
-      box-sizing: border-box;
-      color: #fdfdfd;
-      grid-column: span 12;
-      grid-row: 1;
-      height: auto;
-      padding: 0.5em;
-      text-align: left;
-      width: 100%;
+    .main-tile {
+        background-size: cover;
+        height: 100%;
+        min-height: 40vh;
+        position: relative;
+        width: 100%;
+        background-image: url(../img/logo_lg.png);
     }
 
-    .main-article h2 {
+    .main-overlay {
+        background-color: rgba(0, 0, 0, 0.7);
+        bottom: 0;
+        box-sizing: border-box;
+        color: #fff;
+        height: auto;
+        left: 50%;
+        padding: 5px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+    }
+
+    .main-overlay h2 {
         font-size: 2em;
     }
 
-    .main-article p {
+    .main-overlay p {
         font-size: 1.5em;
     }
 
-    .main-article a {
+    .main-overlay a {
         text-decoration: none;
         color: #CCF;
     }
@@ -151,6 +157,7 @@
         grid-column: span 12;
         grid-row: 4;
     }
+
 
 /*----- navigation --------------------------------------*/
 
@@ -211,8 +218,11 @@
         font-size: 2em;
         line-height: 1.5em;
         height: 17%;
+        left: 50%;
         position: absolute;
         text-align: center;
+        top: 50%;
+        transform: translate(-50%,-50%);
         width: 100%;
     }
 
