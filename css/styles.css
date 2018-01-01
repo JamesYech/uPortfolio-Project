@@ -43,6 +43,7 @@
         font-size: 100.01%;
         max-width: 960px;
         padding: 1em;
+        margin: 0 auto;
     }
 
     .hr-line {
@@ -57,7 +58,6 @@
         grid-template-columns: repeat(12,1fr);
         grid-gap: 10px;
         grid-auto-rows: minmax(50px, auto);
-        max-width: 980px;
         min-width: 300px;
         width: 100%;
     }
