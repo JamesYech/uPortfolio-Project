@@ -41,6 +41,7 @@
         color: #424242;
         font-family: "Fira Sans", sans-serif;
         font-size: 100.01%;
+        margin: 0 auto;
         max-width: 960px;
         padding: 1em;
     }
@@ -57,9 +58,23 @@
         grid-template-columns: repeat(12,1fr);
         grid-gap: 10px;
         grid-auto-rows: minmax(50px, auto);
-        max-width: 980px;
         min-width: 300px;
         width: 100%;
+    }
+
+
+/*----- column spans ------------------------------------*/
+
+    .col-span-6 {
+        grid-column: span 6;
+    }
+
+    .col-span-4 {
+        grid-column: span 4;
+    }
+
+    .nav-col-sm, .col-span-12 {
+        grid-column: span 12;
     }
 
 
@@ -67,7 +82,6 @@
 
      .header-grid {
         display: inline-grid;
-        grid-column: 1/-1;
         grid-row: 1;
     }
 
@@ -77,15 +91,15 @@
     }
 
     .header-name {
-        grid-column: 4/12;
+        grid-column: 4/13;
         grid-row: 1;
         text-align: right;
     }
 
     .header-hr {
-        grid-column: 1/12;
         grid-row: 2;
     }
+
     .logo {
         max-width: 25vmax;
     }
@@ -95,6 +109,7 @@
         font-size: 5vmax;
         font-weight: 100 ;
         letter-spacing: 2px;
+        margin-right: -6px;
     }
 
     .my-title {
@@ -108,13 +123,7 @@
 
     .main-grid {
         display: inline-grid;
-        grid-column: 1/-1;
         grid-row: 2/6;
-    }
-
-    .main-section {
-        grid-column: span 12;
-        grid-row: 2/4;
     }
 
     .main-tile {
@@ -146,6 +155,7 @@
 
     .main-overlay p {
         font-size: 1.5em;
+        margin: 5px 0;
     }
 
     .main-overlay a {             /*Used on a sub-page*/
@@ -154,7 +164,6 @@
     }
 
     .main-hr {
-        grid-column: span 12;
         grid-row: 4;
     }
 
@@ -163,13 +172,8 @@
 
      .nav-grid {
         display: inline-grid;
-        grid-column: 1/-1;
         grid-gap: 10px;
         grid-row: 6;
-    }
-
-    .nav-col-sm {
-        grid-column: span 12;
     }
 
     .nav-title {
@@ -230,7 +234,6 @@
 /*----- footer ------------------------------------------*/
 
    .footer-grid {
-        grid-column: 1/-1;
         grid-row: 7/8;
     }
 
